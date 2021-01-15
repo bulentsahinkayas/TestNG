@@ -1,17 +1,19 @@
 package TestNG;
-import org.junit.*;
-import org.junit.Assert;
 
 
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 
 
 public class _02_TestNGBeforeAfter {
-    @org.testng.annotations.BeforeMethod
+    @BeforeMethod
     public void beforeEachTest(){
         System.out.println("Do something before each test");
     }
 
-    @org.testng.annotations.AfterMethod
+    @AfterMethod
     public void afterEachTest() {
         System.out.println("Do something after each test");
     }

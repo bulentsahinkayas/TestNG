@@ -1,9 +1,10 @@
 package TestNG;
-import org.junit.*;
-import org.junit.Assert;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 
-import org.junit.Assert;
 public class _03_TestNGBeforeAfterClass {
     @BeforeClass
     public void beforeEachTest(){
